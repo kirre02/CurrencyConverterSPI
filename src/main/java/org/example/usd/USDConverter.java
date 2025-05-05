@@ -11,6 +11,11 @@ public class USDConverter implements CurrencyConverter {
     }
 
     @Override
+    public String getSupportedCurrencyCode() {
+        return "USD";
+    }
+
+    @Override
     public double convertToSEK(double amount, String currencyCode) {
         if (!currencyCode.equalsIgnoreCase("USD")) throw new IllegalArgumentException("Invalid currency");
         return amount * 10.5;
