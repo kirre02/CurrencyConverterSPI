@@ -25,7 +25,7 @@ public class Main {
 
         System.out.print("Ditt val (1-" + converters.size() + "): ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // konsumera newline
+        scanner.nextLine();
 
         if (choice < 1 || choice > converters.size()) {
             System.err.println("❌ Ogiltigt val.");
